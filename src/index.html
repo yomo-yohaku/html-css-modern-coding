@@ -3,28 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boards</title>
 
-    <!-- pageDataのtitle情報を出力 -->
-    <title>{{title}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
-    <!-- CSSの読み込みを追加 -->
-    <link rel="stylesheet" href="./scss/style.scss">
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <link href="./scss/style.scss" rel="stylesheet">
   </head>
   <body>
-    <!-- header.htmlの読み込み -->
-    {{> header}}
 
-    <div id="app"></div>
-    <p class="piyo"></p>
-    <img src="./assets/images/hoge.jpg" alt="">
-
-    <!-- type="module"が追加されているmain.jsのscriptタグ -->
     <script type="module" src="./js/main.js"></script>
-
-    <!-- public内のJSを読み込む時はtype属性を省く普通の方法で書く -->
-    <script src="/assets/js/fuga.js"></script>
-    <script src="/assets/js/hoge.js"></script>
-    
   </body>
 </html>
