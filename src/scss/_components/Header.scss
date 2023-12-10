@@ -1,0 +1,27 @@
+@use "../_base/global.scss" as *;
+
+.Header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 112px;
+    background-color: #ffffff;
+}
+.Header__Container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .Site {
+        margin-right: auto;
+    }
+}
+
+.NavBtn {
+    padding: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #aaaaaa;
+    font-size: 30px;
+}
