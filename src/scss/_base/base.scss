@@ -1,0 +1,15 @@
+@use "../_base/global.scss" as *;
+
+body {
+    margin: 0;
+    background-color: #eeeeee;
+}
+img {
+    display: block;
+}
+
+//横幅と左右の余白
+.w-container {
+    width: min(92%, 1166px);
+    margin: auto;
+}

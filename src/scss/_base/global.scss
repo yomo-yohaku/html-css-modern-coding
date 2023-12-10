@@ -1,0 +1,24 @@
+// 変数・mixinなど、CSSを出力しない記述をする
+
+// メディアクエリ
+$breakpoints: (
+  medium: 768,
+);
+@mixin pc {
+  @media screen and (min-width: #{map-get($breakpoints, medium) * 1px + 0.02px}), print {
+    @content;
+  }
+}
+@mixin sp {
+  @media screen and (max-width: #{map-get($breakpoints, medium) * 1px}) {
+    @content;
+  }
+}
+
+// 色
+// $color-midnight-blue: #001e62; // 例
+
+// z-index
+// $z-index: (
+//   local-nav-pc: 10, // 例
+// );
