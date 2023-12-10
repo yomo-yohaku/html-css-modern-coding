@@ -1,0 +1,41 @@
+//基本
+body {
+    margin: 0;
+    background-color: #eeeeee;
+}
+img {
+    display: block;
+}
+
+//横幅と左右の余白
+.w-container {
+    width: min(92%, 1166px);
+    margin: auto;
+}
+
+//ヘッダー
+.Header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 112px;
+    background-color: #ffffff;
+}
+.Header__Container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .Site {
+        margin-right: auto;
+    }
+}
+
+.NavBtn {
+    padding: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #aaaaaa;
+    font-size: 30px;
+}
