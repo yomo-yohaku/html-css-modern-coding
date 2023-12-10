@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --host",
     "preview": "vite preview",
-    "build": "vite build && html-beautify dist/**/*.html && cp -r dist docs",                   
+    "build": "vite build && html-beautify docs/**/*.html dist/**/*.html && cp -r dist docs",                   
     "rebuild": "vite build && rm -R docs && cp -r dist docs",
     "git": "git add . && git commit && git push origin main"
   },
